@@ -1,20 +1,25 @@
+/* base.css - default styling for all pages */
+
 body {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
+a {
+    color: #1da1f2;
+    text-decoration: none;
 }
 
-article {
-    flex: 2;
-    overflow-y: auto;
+a:hover {
+    text-decoration: underline;
 }
 
-aside {
-    flex: 1;
-    overflow-y: auto;
+header, footer {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
 }
