@@ -1,70 +1,92 @@
-
----
-
-## **index.html **
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Advanced Project</title>
-    <!-- Link to Google Fonts or local fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="" crossorigin="anonymous"></script>
+    <title>Document</title>
 
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe5b4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Project Logo">
-        </div>
         <nav>
+            <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Fschool-logo-vector-design-with-white-background_579306-14620.jpg%3Fw%3D2000&sp=1758708552T034208f8ca6ce7c3ca04c41c28bd4e947b30ea5b932e8a15bed3690453fe022c" alt="Logo">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h1>Welcome to the CSS Advanced Project</h1>
-            <p>This project demonstrates advanced CSS techniques based on a Figma design.</p>
-            <img src="images/banner.png" alt="Banner Image">
-        </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Responsive Layout</li>
-                <li>Custom Fonts & Colors</li>
-                <li>Semantic HTML Structure</li>
-                <li>CSS Styling from Figma Design</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple example of HTML with CSS inside the same file.</p>
     </main>
 
     <footer>
-        <p>&copy; 2025 CSS Advanced Project</p>
+        <p>&copy; 2025 My Website James Njoroge. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
