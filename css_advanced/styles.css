@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ==========================
    Global Styles
 ========================== */
@@ -331,4 +332,153 @@ footer p {
   .membership-grid {
     grid-template-columns: 1fr 1fr;
   }
+=======
+/* ====================================
+   CSS Advanced Project - styles.css
+   ==================================== */
+
+/* 1. Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body & Global Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light neutral background */
+    color: #333;
+    padding: 20px;
+}
+
+/* 3. Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1E3A8A; /* Example primary color */
+    color: white;
+    border-radius: 8px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #FACC15; /* Example hover color */
+}
+
+/* 4. Main Sections */
+main section {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Section Headings */
+main section h1,
+main section h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1E3A8A; /* Heading color */
+}
+
+/* Paragraphs */
+main section p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Lists */
+main section ul {
+    list-style: disc inside;
+    padding-left: 10px;
+}
+
+/* 5. Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1E3A8A;
+    box-shadow: 0 0 5px rgba(30, 58, 138, 0.3);
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1E3A8A;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3749A3;
+}
+
+/* 6. Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 8px;
+}
+
+/* 7. Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+>>>>>>> 687de0482c0b38f2ad7e04b187ead469d051fb08
 }
