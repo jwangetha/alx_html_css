@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphones — Home</title>
+  <link rel="stylesheet" href="0-styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-row">
+      <a class="logo" href="/" aria-label="Headphones home">Headphones</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <a class="btn btn-primary" href="#" role="button">Buy now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Sound that moves you</h1>
+          <p class="hero-sub">Experience studio-quality audio, ultra comfort, and long battery life — built for music lovers.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#">Shop headphones</a>
+            <a class="link-secondary" href="#" aria-label="Learn more about headphones">Learn more</a>
+          </div>
+        </div>
+
+        <figure class="hero-media" aria-hidden="false">
+         
+          <picture>
+            <source media="(max-width:480px)" srcset="assets/img/01_headphones_mobile@2x.png">
+            <img src="assets/img/01_headphones_desktop@2x.png"
+                 alt="Black over-ear headphones on a neutral background"
+                 loading="lazy">
+          </picture>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Headphones — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small nicety: fill current year
+    document.getElementById('2025').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
