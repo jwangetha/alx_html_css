@@ -1,0 +1,98 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphones — Home</title>
+
+  <!-- Existing main stylesheet -->
+  <link rel="stylesheet" href="0-styles.css" />
+  
+  <!-- Add the new stylesheet for the What We Do section -->
+  <link rel="stylesheet" href="1-styles.css" />
+
+  <!-- Add the stylesheet for the Our Results section -->
+  <link rel="stylesheet" href="2-styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-row">
+      <a class="logo" href="/" aria-label="Headphones home">Headphones</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#" role="button">Buy now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Sound that moves you</h1>
+          <p class="hero-sub">Experience studio-quality audio, ultra comfort, and long battery life — built for music lovers.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#">Shop headphones</a>
+            <a class="link-secondary" href="#" aria-label="Learn more about headphones">Learn more</a>
+          </div>
+        </div>
+        
+        <figure class="hero-media" aria-hidden="false">
+          <picture>
+            <source media="(max-width:480px)" srcset="assets/img/01_headphones_mobile@2x.png">
+            <img src="assets/img/01_headphones_desktop@2x.png"
+                 alt="Black over-ear headphones on a neutral background"
+                 loading="lazy">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Our results Section -->
+    <section id="our-results" class="results container" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="results__title">Our results</h2>
+      <p class="results__lead">Real numbers from real users — performance and satisfaction we deliver.</p>
+
+      <div class="results__grid" role="list">
+        <div class="result-card" role="listitem">
+          <div class="result-number">98<span class="result-suffix">%</span></div>
+          <div class="result-label">Customer satisfaction</div>
+        </div>
+
+        <div class="result-card" role="listitem">
+          <div class="result-number">1<span class="result-suffix">M+</span></div>
+          <div class="result-label">Units shipped</div>
+        </div>
+
+        <div class="result-card" role="listitem">
+          <div class="result-number">4.9<span class="result-suffix">/5</span></div>
+          <div class="result-label">Average rating</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our results Section -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Headphones — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```

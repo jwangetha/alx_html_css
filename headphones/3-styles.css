@@ -1,0 +1,130 @@
+/* -------------------------------------------------------
+   0 + 1 + 2 Combined Stylesheet + Contact Us
+   Includes: Reset, Header, Hero, Font Icons,
+   "What we do", "Our results", "Contact us"
+---------------------------------------------------------- */
+
+/* Variables + Reset */
+:root{
+  --max-width:1000px;
+  --page-gap:16px;
+  --accent:#FF6565;
+  --text:#111111;
+  --muted:#6B6B6B;
+  --bg:#a3c0d8;
+  --radius:10px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* ... [keep all your previous combined CSS exactly as-is up to the end of the “Our Results” section] ... */
+
+/* -------------------------------------------------------
+   Our Results Section
+---------------------------------------------------------- */
+.results {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.results__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.results__lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 50px;
+}
+
+.results__grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.result-card {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+/* -------------------------------------------------------
+   Contact Us Section
+---------------------------------------------------------- */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+  background: #fff;
+  border-radius: var(--radius);
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  color: var(--muted);
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Responsive form adjustments */
+@media (max-width: 480px) {
+  .contact {
+    padding: 50px 0;
+  }
+  .contact__form {
+    width: 90%;
+  }
+}
